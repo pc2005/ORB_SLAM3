@@ -1,10 +1,10 @@
 #!/bin/bash
-pathDatasetEuroc='/Datasets/EuRoC' #Example, it is necesary to change it by the dataset path
+pathDatasetEuroc='/media/pc2005/WD_BLACK/data/EuRoC' #Example, it is necesary to change it by the dataset path
 
 #------------------------------------
 # Monocular Examples
 echo "Launching MH01 with Monocular sensor"
-./Monocular/mono_euroc ../Vocabulary/ORBvoc.txt ./Monocular/EuRoC.yaml "$pathDatasetEuroc"/MH01 ./Monocular/EuRoC_TimeStamps/MH01.txt dataset-MH01_mono
+./Monocular/mono_euroc ../Vocabulary/ORBvoc.txt ./Monocular/EuRoC.yaml "$pathDatasetEuroc"/MH_01_easy ./Monocular/EuRoC_TimeStamps/MH01.txt dataset-MH01_mono
 
 echo "Launching MH02 with Monocular sensor"
 ./Monocular/mono_euroc ../Vocabulary/ORBvoc.txt ./Monocular/EuRoC.yaml "$pathDatasetEuroc"/MH02 ./Monocular/EuRoC_TimeStamps/MH02.txt dataset-MH02_mono
@@ -34,7 +34,7 @@ echo "Launching V202 with Monocular sensor"
 ./Monocular/mono_euroc ../Vocabulary/ORBvoc.txt ./Monocular/EuRoC.yaml "$pathDatasetEuroc"/V202 ./Monocular/EuRoC_TimeStamps/V202.txt dataset-V202_mono
 
 echo "Launching V203 with Monocular sensor"
-./Monocular/mono_euroc ../Vocabulary/ORBvoc.txt ./Monocular/EuRoC.yaml "$pathDatasetEuroc"/V203 ./Monocular/EuRoC_TimeStamps/V203.txt dataset-V203_mono
+./Monocular/mono_euroc ../Vocabulary/ORBvoc.txt ./Monocular/EuRoC.yaml "$pathDatasetEuroc"/V2_03_difficult ./Monocular/EuRoC_TimeStamps/V203.txt dataset-V203_mono
 
 # MultiSession Monocular Examples
 echo "Launching Machine Hall with Monocular sensor"
@@ -94,7 +94,7 @@ echo "Launching Vicon Room 2 with Stereo sensor"
 #------------------------------------
 # Monocular-Inertial Examples
 echo "Launching MH01 with Monocular-Inertial sensor"
-./Monocular-Inertial/mono_inertial_euroc ../Vocabulary/ORBvoc.txt ./Monocular-Inertial/EuRoC.yaml "$pathDatasetEuroc"/MH01 ./Monocular-Inertial/EuRoC_TimeStamps/MH01.txt dataset-MH01_monoi
+./Monocular-Inertial/mono_inertial_euroc ../Vocabulary/ORBvoc.txt ./Monocular-Inertial/EuRoC.yaml "$pathDatasetEuroc"/MH_01_easy ./Monocular-Inertial/EuRoC_TimeStamps/MH01.txt dataset-MH01_monoi
 
 echo "Launching MH02 with Monocular-Inertial sensor"
 ./Monocular-Inertial/mono_inertial_euroc ../Vocabulary/ORBvoc.txt ./Monocular-Inertial/EuRoC.yaml "$pathDatasetEuroc"/MH02 ./Monocular-Inertial/EuRoC_TimeStamps/MH02.txt dataset-MH02_monoi
